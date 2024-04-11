@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node ./src/index",
+    "gen:key": "ts-node ./src/generate-mnemonic",
     "sendtx": "ts-node ./src/sendtx",
-    "gen:key": "ts-node ./src/generate-mnemonic"
+    "subs": "ts-node ./src/block-subscribe"
   },
   "author": "shjang",
   "license": "ISC",
@@ -16,6 +17,8 @@
     "typescript": "^5.4.4"
   },
   "dependencies": {
-    "@cosmjs/cli": "^0.32.3"
+    "@cosmjs/cli": "^0.32.3",
+    "@types/crypto-js": "^4.2.2",
+    "crypto-js": "^4.2.0"
   }
 }
