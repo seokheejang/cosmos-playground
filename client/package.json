@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node ./src/index",
-    "gen:mnemonic": "ts-node ./src/generate-mnemonic"
+    "sendtx": "ts-node ./src/sendtx",
+    "gen:key": "ts-node ./src/generate-mnemonic"
   },
   "author": "shjang",
   "license": "ISC",
