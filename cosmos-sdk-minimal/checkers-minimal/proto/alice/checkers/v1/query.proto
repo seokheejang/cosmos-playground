@@ -14,8 +14,7 @@ service Query {
   // GetGame returns the game at the requested index.
   rpc GetGame(QueryGetGameRequest) returns (QueryGetGameResponse) {
     option (cosmos.query.v1.module_query_safe) = true;
-    option (google.api.http).get =
-      "/alice/checkers/v1/game/{index}";
+    option (google.api.http).get = "/alice/checkers/v1/game/{index}";
   }
 }
 

@@ -13,8 +13,7 @@ service Msg {
   option (cosmos.msg.v1.service) = true;
 
   // CreateGame create a game.
-  rpc CreateGame(MsgCreateGame)
-    returns (MsgCreateGameResponse);
+  rpc CreateGame(MsgCreateGame) returns (MsgCreateGameResponse);
 }
 
 // MsgCreateGame defines the Msg/CreateGame request type.
@@ -23,9 +22,9 @@ message MsgCreateGame {
 
   // creator is the message sender.
   string creator = 1;
-  string index = 2 ;
-  string black = 3 [(cosmos_proto.scalar) = "cosmos.AddressString"];
-  string red = 4 [(cosmos_proto.scalar) = "cosmos.AddressString"];
+  string index = 2;
+  string black = 3 [ (cosmos_proto.scalar) = "cosmos.AddressString" ];
+  string red = 4 [ (cosmos_proto.scalar) = "cosmos.AddressString" ];
 }
 
 // MsgCreateGameResponse defines the Msg/CreateGame response type.
